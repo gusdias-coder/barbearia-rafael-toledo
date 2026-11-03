@@ -17,11 +17,11 @@ Página independente para complementar o site institucional. O arquivo index.htm
 ## Configuração obrigatória
 No início de assets/js/agendamento.js, edite CONFIG para confirmar:
 - duração de cada serviço;
-- dias e horários de funcionamento das unidades;
+- dias e horários de funcionamento das unidades (ambas configuradas de segunda a sábado, das 09h às 20h);
 - número de WhatsApp correto por unidade;
 - antecedência máxima permitida.
 
-A unidade Passo das Pedras está configurada como "horário sob consulta", pois o site institucional não informa seus dias e horários. O botão final usa o WhatsApp principal publicado no site. Confirme se esse é o contato correto para as duas unidades.
+As duas unidades estão configuradas com o mesmo funcionamento: segunda a sábado, das 09h às 20h. Cada unidade mantém sua própria seleção no fluxo e é identificada individualmente na mensagem enviada ao WhatsApp. O botão final usa o WhatsApp principal publicado no site; confirme se esse é o contato correto para ambas.
 
 ## Limitação desta versão
 Esta é uma primeira versão de frontend. O calendário gera opções com base no horário cadastrado, mas não consulta uma agenda compartilhada. Portanto, não sabe quais horários já foram ocupados, não bloqueia reservas concorrentes, não grava agendamentos em banco de dados e não confirma horários automaticamente.
