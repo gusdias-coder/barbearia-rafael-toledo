@@ -21,3 +21,11 @@
 .button-arrow svg{width:17px;height:17px}
 .card-footer{justify-content:flex-start}
 @media(max-width:600px){.card-footer{min-height:52px}}
+
+/* O título recebe foco programático ao trocar de etapa para leitores de tela.
+   Remove o contorno azul nativo do Safari sem afetar os focos dos controles. */
+#stepTitle:focus,
+#stepTitle:focus-visible{
+  outline:none;
+  box-shadow:none;
+}
