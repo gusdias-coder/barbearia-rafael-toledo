@@ -40,7 +40,7 @@ function renderServices(){
 }
 function renderUnits(){
  const grid=document.createElement("div");grid.className="option-grid";
- CONFIG.unidades.forEach(item=>{const b=document.createElement("button");b.type="button";b.className="option-card unit-card";const schedule=item.funcionamento?"Segunda a sábado · 9h às 20h":"Horários sob consulta com a equipe";b.innerHTML='<span class="option-title">'+safe(item.nome)+'</span><span class="unit-address">'+safe(item.endereco)+'<br>'+schedule+'</span><span class="option-check">↗</span>';b.addEventListener("click",()=>{state.unidade=item;state.data=null;state.horario=null;go(2)});grid.append(b)});content.append(grid);
+ CONFIG.unidades.forEach(item=>{const b=document.createElement("button");b.type="button";b.className="option-card unit-card";const schedule=item.funcionamento?"Segunda a sábado · 9h às 20h":"Horários sob consulta com a equipe";b.innerHTML='<span class="option-title">'+safe(item.nome)+'</span><span class="unit-address">'+safe(item.endereco)+'<br>'+schedule+'</span><span class="option-check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h13M12 5l7 7-7 7"/></svg></span>';b.addEventListener("click",()=>{state.unidade=item;state.data=null;state.horario=null;go(2)});grid.append(b)});content.append(grid);
 }
 function renderCalendar(){
  if(!state.unidade.funcionamento){
