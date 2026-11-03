@@ -10,7 +10,7 @@ const CONFIG={
   ],
   unidades:[
     {id:"mangueira",nome:"Passo da Mangueira",endereco:"Av. Eng. Francisco Rodolfo Simch, 207",whatsapp:"5551999438562",funcionamento:{1:["09:00","20:00"],2:["09:00","20:00"],3:["09:00","20:00"],4:["09:00","20:00"],5:["09:00","20:00"],6:["09:00","20:00"]}},
-    {id:"pedras",nome:"Matriz · Passo das Pedras",endereco:"Rua Ana Aurora do Amaral Lisboa, 343",whatsapp:"5551999438562",funcionamento:null}
+    {id:"pedras",nome:"Matriz · Passo das Pedras",endereco:"Rua Ana Aurora do Amaral Lisboa, 343",whatsapp:"5551999438562",funcionamento:{1:["09:00","20:00"],2:["09:00","20:00"],3:["09:00","20:00"],4:["09:00","20:00"],5:["09:00","20:00"],6:["09:00","20:00"]}}
   ]
 };
 const state={step:0,servico:null,unidade:null,data:null,horario:null,month:null};
